@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Breed Selector</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin:60px;;
+        }
+        select{
+            padding: 15px;
+            font-size: 15px;
+        }
+        img{
+            margin-top: 25px;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Select a Dog Breed</h1>
+    <select id="breedSelect" onchange="loadImage()">
+        <option value="">--Select a Breed--</option>
+        <option value="akita">Akita</option>
+        <option value="beagle">Beagle</option>
+        <option value="dalmatian">Dalmatian</option>
+        <option value="germanshepherd">German Shepherd</option>
+        <option value="husky">Husky</option>
+        <option value="labrador">Labrador</option>
+        <option value="pug">Pug</option>
+        <option value="goldenretriever">Golden Retriever</option>
+        <option value="cockerspaniel">Cocker Spaniel</option>
+    </select>
+    <div id="dogImageContainer">
+<img id="dogImage" src="" alt="Dog Image" style="display: none;">
+    </div>
+    <script src="dog.js"></script>
+</body>
+</html>

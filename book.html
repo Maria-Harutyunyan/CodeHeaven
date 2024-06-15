@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Search</title>
+    <style>
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 30px;
+        }
+        input{
+            width: 200px;
+            margin-right: 20px;
+            padding: 20px;
+        }
+        button{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="bookName" placeholder="Enter book name">
+    <button onclick="searchBooks()">Search</button>
+    <div class="results" id="results"></div>
+    <div class="pagination" id="pagination"></div>
+    <script src="book.js"></script>
+</body>
+</html>

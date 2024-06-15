@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timer</title>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+     flex-direction: column;
+     align-items: center;
+     height: 100vh;
+    }
+    #timer{
+      font-size: 50px;
+    }
+    #controls{
+      font-size: 30px;
+    }
+    button{
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="timer">00:00</div>
+
+  <div id="controls">
+    <input type="number" id="timeInput" placeholder="Time with seconds">
+    <button onclick="startTimer()">Start</button>
+    <button onclick="pauseTimer()">Pause</button>
+    <button onclick="resetTimer()">Reset</button>
+</div>
+  <script src="timer.js"></script>
+</body>
+</html>
